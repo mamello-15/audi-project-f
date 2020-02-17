@@ -1,0 +1,228 @@
+body  {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Verdana;
+  padding: 355px 380px 0px 311px;
+  
+  
+}
+
+.play-video {
+    padding-left: 70px;
+    padding-top: 13px;
+}
+
+.play-video button {
+    width: 42px;
+    border-radius: 27px;
+    background-color: transparent;
+    border: solid 1px white;
+    opacity: 0.;
+}
+
+.play-video i.fa {
+        display: inline-block;
+        border-radius: 60px;
+        padding: 0.5em 0.6em;
+        color: white;
+}
+
+.form {
+    padding: 50px 19px 70px 20px;
+background-color: rgb(0, 0, 0, 0.9);
+width: 750px;
+position: absolute;
+left:0px;
+color: white;
+}
+
+.intro-text h3 {
+    padding:20px 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.intro-text p {
+    /* padding:10px 0; */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header-tcs{
+    font-size: 11px;
+    padding-bottom: 10px;
+}
+
+.preferred-section {
+    padding: 15px 0px;
+    font-size: 15px;
+}
+
+.preferred-copy {
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+.personal-details-1 {
+    padding: 10px 0px;
+    
+}
+
+.personal-details-2 {
+    padding: 10px 0px;
+}
+.personal-details-copy {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.form-control {
+    border: 0 !important;
+}
+
+.footer-tcs {
+    padding-top: 19px;
+    font-size: 12px;
+    line-height: 25px;
+
+}
+
+.footer {
+    padding-top: 25px;
+}
+
+.footer-copy {
+    padding-top: 5px
+}
+
+.btn {
+    width: 230px;
+    color: white;
+    font-weight: 500;
+    background-color: crimson
+
+}
+
+.modal-dialog {
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+.modal-content {
+    background-color: black;
+}
+
+.close {
+    color: white;
+    display: flex;
+    align-items: flex-start;
+}
+
+.checkbox-footer {
+    padding: 23px;
+}
+
+/* Forms custom style*/
+
+.form-control {
+    border-bottom: 2px solid #ffffff !important;
+    border-top: 0px!important;
+    background-color: transparent;
+    color: white !important;
+    font-size: 20px;
+}
+
+.custom-select {
+    border-top: 0px!important;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+/* media queries */
+
+@media screen and (min-width:320px) and (max-width:600px) {
+    body {
+        background-image: url("images/mobi-banner.jpg") !important;
+    }
+
+    .form {
+        width: 973px;
+        left: 0px;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .form {
+        width: 820px;
+        left: 78px;
+    }
+    body {
+        background-image: url("images/banner.jpg") !important;
+    }
+    
+    
+}
+
+@media only screen and (min-width:1200px) {
+    .form {
+        left: 321px;
+        margin: 0 18%;
+    }
+
+}
+
+@media only screen and (min-width:2560px) {
+    .form {
+        left: 19px;
+        width: 1939px;
+        padding: 64px 0px;
+    }
+    .play-video {
+        padding-left: 70px;
+        padding-top: 13px;
+        padding-bottom: 40px;
+    }
+    .intro-text h3 {
+        padding: 20px 0;
+        font-size: 71px;
+        font-weight: 600;
+}
+
+.intro-text p {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.header-tcs {
+    font-size: 22px;
+    padding: 16px 0px;
+}
+
+.preferred-copy {
+    padding: 10px 0px;
+    font-size: 26px;
+}
+
+.personal-details-copy {
+    padding: 10px 0;
+    font-size: 26px;
+}
+
+.btn {
+    width: 300px;
+}
+
+.footer-tcs {
+    padding-top: 34px;
+    font-size: 16px;
+    line-height: 34px;
+}
+
+.footer-copy { 
+    font-size:20px;
+}
+
+}

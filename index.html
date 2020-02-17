@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8">
+  <title>Audi Project</title>
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel = "stylesheet" type = "text/css" href = "style.css" />
+</head>
+<body>
+  <div class ="fluid-container d-flex justify-content-center">
+<div class = "form d-flex justify-content-center">
+  <div class = "logo-section">
+    <div class="container">
+      <div class = "row">
+        <div class ="col-md-6 col-sm-12 logo">
+          <img src ="images/logo.png" width="130px" height="45px">
+        </div>
+        <div class ="col-md-6 col-sm-12 play-video">
+         #JoinTheStatusQ <button data-toggle="modal" data-target="#video-modal"><i class="fa fa-play" aria-hidden="true"></i></button>
+      
+        </div>
+      </div>
+      <div class = "intro-text">
+      <h3>Join The Status Q This July!</h3>
+      <p>The Audi Q7 with R120000 with of optional extras</p>
+      <p>Because nothing beats a little extra. Take advantage of this offer today</p>
+    </div>
+    <div class = "header-tcs">
+      *Options may vary, Features depended on model
+    </div>
+    <div class ="preferred-section">
+      <div class ="preferred-copy">Preferred Dealership</div>
+    
+
+    <form action="contact.php" method="POST">
+    <div class ="row">
+      <div class ="col-md-6 col-sm-12 province">
+        <select name="province" id="province" onsubmit ="return getDealers()" class="custom-select mb-3">
+          <option selected>Select Province</option>
+          <option value="kwazulunatal">KwaZulu Natal</option>
+          <option value="freestate">Free State</option>
+          <option value="limpopo">Limpopo</option>
+          <option value="westerncape">Cape Town</option>
+          <option value="easterncape">Eastern Cape</option>
+        </select>
+      </div>
+
+      <div class ="col-md-6 col-sm-12 dealership">
+        <select name="dealerships" class="custom-select mb-3">
+          <option id = "select" selected>Select Dealer</option>
+          <option id ="durban" value="durban">Audi Durban</option>
+          <option value="capetown">Audi Cape Town</option>
+          <option value="portelizabeth">Fiat</option>
+          <option value="bethlehem">Audi</option>
+        </select>
+      </div>
+    </div>
+    </div>
+    <div class = "personal-details-copy">Personal Details</div>
+    <div class ="row">
+      <!-- <div class = "personal-details-1"> -->
+    
+    <!-- <div class ="col title ">
+      <select name="title" class="custom-select   mb-3 w-25">
+        <option selected>title</option>
+        <option value="mr">Mr</option>
+        <option value="miss">Miss</option>
+        <option value="mrs">Mrs</option>
+      </div> -->
+        <div class = "first-name col">
+      </select><input type="name" class="form-control border" id="name" placeholder="Name">
+      
+    </div>
+
+    <div class ="col last-name col">
+      <input type="name" class="form-control border " id="name" placeholder="Last Name">
+    <!-- </div> -->
+  </div>
+</div>
+<div class = "personal-details-2">
+  <div class ="row">
+      
+    <div class ="col e-mail">
+      <input type="name" class="form-control border" id="name" placeholder="Email">
+    </div>
+
+    <div class ="col phone">
+      <input type="name" class="form-control border" id="name" placeholder="Day Phone Number">
+    </div>
+  </div>
+</div>
+  <div class="custom-control custom-checkbox mb-3 checkbox-footer">
+    <input type="checkbox" class="custom-control-input " id="customCheck">
+    <label class="custom-control-label" for="customCheck">I would like to sign up for audi newsletter</label>
+  </div>
+  <button type="submit" onsubmit="return formData()" class="btn btn-warn">Submit</button>
+</form>
+<div class ="footer-tcs">
+  Limited stock. T&Cs apply<br/>
+  *Options may vary, depends on models.
+</div>
+<div class ="footer">
+<div class = "row">
+  <div class =" col footer-copy">
+    @Audi johannesburg 2010 
+  </div>
+  <div class =" col footer-icons">
+   <a href= "https://www.facebook.com" style="color: white;"> <i class ="fa fa-facebook"></i></a>
+   <a href= "https://www.twitter.com" style="color: white;"><i class =" fa fa-twitter"></i></a>
+   <a href= "https://www.instagram.com" style="color: white;"><i class ="fa fa-instagram"></i></a>
+   <a href= "https://www.linkedin.com" style="color: white;"> <i class ="fa fa-linkedin"></i></a>
+  </div>
+</div>
+    </div>
+  </div>
+  </div>
+  
+</div>
+ <!-- My Video Modal -->
+ <div class="modal fade" id="video-modal" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class ="close">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+      <video controls loop>
+        <source src="images/banner-video.mp4" type="video/mp4">
+  
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src ="form.js"></script>
+</body>
+</html>
