@@ -7,11 +7,13 @@ if(isset($_POST['submit'])){
     $email = $_POST['e-mail'];
     $number = $_POST['number'];
     $checkbox = $GET['checkbox'];
+    $name = $GET['province'];
+    $name = $GET['dealers'];
     $message = $first_name . " " . $last_name . " " . $email . " " . $number . " wrote the following:" . "\n\n" . $_POST['message'];
     $headers = "From:" . $from;
     mail($to,$first_name,$last_name,$email, $number,$message,$headers);
     header("Location: thankyou_page.html");
 
-    }
+
 ?>
 

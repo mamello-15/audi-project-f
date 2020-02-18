@@ -42,23 +42,23 @@
     <form action="contact.php" method="POST">
     <div class ="row">
       <div class ="col-md-6 col-sm-12 province">
-        <select name="province" id="province" onsubmit ="return getDealers()" class="custom-select mb-3">
+        <select name="province" id="provinces" onsubmit ="return getDealers()" class="custom-select mb-3">
           <option selected>Select Province</option>
-          <option value="kwazulunatal">KwaZulu Natal</option>
-          <option value="freestate">Free State</option>
-          <option value="limpopo">Limpopo</option>
-          <option value="westerncape">Cape Town</option>
-          <option value="easterncape">Eastern Cape</option>
+          <option id="province" name="province[]" value="kwazulunatal">KwaZulu Natal</option>
+          <option id="province" name="province[]" value="freestate" >Free State</option>
+          <option id="province" name="province[]" value="limpopo">Limpopo</option>
+          <option id="province" name="province[]" value="westerncape">Cape Town</option>
+          <option id="province" name="province[]" value="easterncape">Eastern Cape</option>
         </select>
       </div>
 
       <div class ="col-md-6 col-sm-12 dealership">
         <select name="dealerships" class="custom-select mb-3">
-          <option id = "select" selected>Select Dealer</option>
-          <option id ="durban" value="durban">Audi Durban</option>
-          <option value="capetown">Audi Cape Town</option>
-          <option value="portelizabeth">Fiat</option>
-          <option value="bethlehem">Audi</option>
+          <option id= "dealers" name="dealers[]" selected>Select Dealer</option>
+          <option id="dealers" name="dealers[]" value="durban">Audi Durban</option>
+          <option id="dealers" name="dealers[]" value="capetown">Audi Cape Town</option>
+          <option id ="dealers" name="dealers[]" value="portelizabeth">Fiat</option>
+          <option id ="dealers" name="dealers[]" value="bethlehem">Audi</option>
         </select>
       </div>
     </div>

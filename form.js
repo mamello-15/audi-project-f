@@ -9,7 +9,7 @@ function formData () {
     }
 
     function getDealers () {
-        let selection = document.getElementById('province');
+        let selection = document.getElementById('provinces');
         let userInput = selection.options[selection.selectedIndex].value;
         if(userInput == 'kwazulunatal') {
             document.getElementById('durban');
