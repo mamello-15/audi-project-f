@@ -1,5 +1,5 @@
 function formData () {
-    let firstName = document.getElementById('name'.value);
+    let firstName = document.getElementById('first_name'.value);
 
     if (name === '') {
         alert('Please fill in');
